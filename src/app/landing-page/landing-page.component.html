@@ -1,0 +1,17 @@
+<!-- <app-navbar *ngIf="showNavbar">
+    <div class="flex items-center">
+        <button (click)="toggleDarkMode()" aria-label="Toggle Dark Mode">
+          <i [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'" class="text-2xl"></i>
+        </button>
+      </div>
+</app-navbar> -->
+
+<div class="dark:bg-black bg-slate-100 dark:text-slate-100 text-slate-600 min-h-screen">
+  <router-outlet class="w-full">
+    <a> <i class="fa-solid fa-gem fa-bold"></i></a>
+  </router-outlet>
+  
+ 
+</div>
+
+<app-footer></app-footer>

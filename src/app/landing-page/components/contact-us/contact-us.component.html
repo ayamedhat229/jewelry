@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<section class="contact-us flex flex-col md:flex-row justify-center dark:bg-black bg-customLight dark:text-slate-100 text-black p-6 md:p-10">
+
+    <div class="map p-5 md:ps-10 md:pt-10 pb-10 md:pe-12">
+        <h2 class="font-semibold text-xl md:text-2xl">Contact us</h2>
+        <iframe 
+            class="rounded-3xl w-full h-64 md:w-[700px] md:h-[550px]" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14903546.801014509!2d45.07408335!3d24.222141999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sSaudi%20Arabia!5e0!3m2!1sen!2seg!4v1730655038719!5m2!1sen!2seg" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <div class="p-5 md:pt-28 md:pb-10 md:pe-10 md:ps-12">
+        <h2 class="font-semibold text-xl md:text-2xl">Address</h2>
+        <p class="font-thin text-gray-600">62 W. 47th Street, Suite #608, New York, NY 10036</p>
+        
+        <h2 class="font-semibold text-xl md:text-2xl">Email</h2>
+        <p class="font-thin text-gray-600">hello.com</p>
+        
+        <h2 class="font-semibold text-xl md:text-2xl">Phone</h2>
+        <p class="font-thin text-gray-600">+12-345-6789</p>
+        
+        <h2 class="font-semibold text-xl md:text-2xl ">Social Media</h2>
+        <p>
+            <span><i class="fa-brands fa-twitter pe-2 pt-2 cursor-pointer"></i><i class="fa-brands fa-facebook cursor-pointer p-2"></i><i class="fa-brands cursor-pointer fa-instagram p-2"></i></span>
+        </p>
+    </div>
+</section>
+<app-footer></app-footer>
+<a  class="back-to-top  cursor-pointer" (click)="scrollToComponent()"> 
+    <span class="material-icons fa-solid fa-gem fa-bold" ></span>
+</a>
+

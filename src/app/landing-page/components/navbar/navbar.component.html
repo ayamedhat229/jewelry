@@ -1,0 +1,99 @@
+<nav class=" nav-background  dark:bg-black bg-navbar  dark:text-slate-100 text-slate-600 " >
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button"
+                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                </button>
+            </div>
+
+            <!-- Left side: Logo -->
+            <div class="flex flex-1 items-center justify-start sm:items-stretch"> 
+                <div class="flex flex-shrink-0 items-center">
+                    <!-- Logo and Icon -->
+                    <i class="fa-solid fa-gem fa-bold"><span class="p-3">Jewelry</span></i>
+                </div>
+               
+            </div>
+
+            <!-- Right side: Menu -->
+            <div class="hidden sm:ml-auto sm:block ">
+                <div class="flex space-x-4">
+                    <!-- Navigation links -->
+                    <a href="#"
+                        class="rounded-md px-2 py-2 text-sm font-medium hover:bg-green-300 hover:text-white text-gray-300" routerLink="/landing-page/home" routerLinkActive="bg-green-500">Home</a>
+                    <a 
+                        class="rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-green-300 hover:text-white" routerLink="/landing-page/about-us" routerLinkActive="bg-green-500">About</a>
+                    <a href="#"
+                        class="rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/landing-page/our-products" routerLinkActive="bg-green-500">Products</a>
+                    <!-- <a href="#"
+                        class="rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/landing-page/shops" routerLinkActive="bg-green-500">Shops</a> -->
+                        <a href="#"
+                        class="link rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/landing-page/contact-us" routerLinkActive="bg-green-500">Contact</a>
+                        <button
+                        class="btn-logout rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" (click)="openLogout('500ms', '500ms')" routerLinkActive="bg-green-500">Logout</button>
+                        <button (click)="onToggle()" aria-label="Toggle Dark Mode" class="text-gray-600 dark:text-gray-300">
+                            <i [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon' " class="text-2xl"></i>
+                          </button>
+                          <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                            <button (click)="logout()" mat-menu-item>
+                              <mat-icon><i class="fa-solid fa-right-from-bracket"></i></mat-icon>
+                              <span>Logout</span>
+                            </button>
+                      
+                          </mat-menu>
+                           -->
+                          <!-- <a href="#"
+              class="rounded-md  px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/auth/login">Logout</a> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+               <!-- Navigation links -->
+               <a href="#"
+               class="rounded-md px-2 py-2  text-sm font-medium hover:bg-green-300 hover:text-white text-gray-300" routerLink="/landing-page/home" routerLinkActive="bg-green-500">Home</a>
+           <a 
+               class="rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-green-300 hover:text-white" routerLink="/landing-page/about-us" routerLinkActive="bg-green-500">About</a>
+           <a href="#"
+               class="rounded-md  px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/landing-page/our-products" routerLinkActive="bg-green-500">Products</a>
+           <!-- <a href="#"
+               class="rounded-md  px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/landing-page/shops">Shops</a> -->
+
+               <a href="#"
+               class="rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/landing-page/contact-us" routerLinkActive="bg-green-500">Contact</a>
+               <button
+               class="btn-logout rounded-md px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" (click)="openLogout('500ms', '500ms')" routerLinkActive="bg-green-500">Logout</button>
+               <button (click)="onToggle()" aria-label="Toggle Dark Mode" class="text-gray-600 dark:text-gray-300">
+                <i [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon' " class="text-2xl"></i>
+                
+              </button>
+              <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>dialpad</mat-icon>
+                  <span>Redial</span>
+                </button>
+               
+               
+              </mat-menu> -->
+              
+              <!-- <a href="#"
+              class="rounded-md  px-2 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" routerLink="/auth/login">Logout</a> -->
+            </div>
+           
+        </div>
+    </div>
+ 
+</nav>

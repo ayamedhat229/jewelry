@@ -1,0 +1,25 @@
+<h2 class= "text-black font-semibold text-2xl p-4 shadow-sm">Verify your account</h2>
+<form [formGroup]="onVerifyForm" (ngSubmit)="onVerify(onVerifyForm)" class=" w-full">
+    <mat-dialog-content class="">
+        <mat-form-field class="m-2">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" >
+        
+        </mat-form-field>
+        <mat-form-field class="m-2">
+            <mat-label>Code</mat-label>
+            <input matInput formControlName="code" >
+          
+          </mat-form-field>
+      </mat-dialog-content>
+   
+ 
+
+
+<div class="flex justify-end">
+  <div class="">
+    <button class="bg-verifyCard p-2 rounded-lg me-1 mb-2" mat-button (click)="onNoClick()" routerLink="/auth/login">Submit</button>
+    <button class="bg-verifyCard rounded-lg p-2 ms-1 me-2 mb-2" mat-button [mat-dialog-close]="" cdkFocusInitial>Close</button>
+  </div>
+</div>
+</form>

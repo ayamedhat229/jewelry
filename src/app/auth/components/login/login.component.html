@@ -1,0 +1,53 @@
+<section class="register dark:bg-black bg-customLight dark:text-white text-black">
+  <div class="flex justify-end items-center">
+    <!-- Your dark mode toggle icon can be added here -->
+  </div>
+  <div class="layout flex flex-col md:flex-row justify-around items-center dark:bg-black bg-customLight dark:text-white text-black">
+    <div class="example-form w-full md:w-1/2 lg:w-1/3 px-4">
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm)" class="dark:bg-black bg-customLight dark:text-white text-black">
+        <h1 class="text-2xl md:text-4xl text-center font-bold">Welcome to Login</h1>
+        <p class="text-center pb-4 md:pb-8 font-thin">The faster you fill up, the faster you get a ticket</p>
+        
+        <!-- Email Field -->
+        <label class="block text-sm font-medium">Email</label>
+        <mat-form-field class="example-full-width w-full">
+          <mat-label>Email</mat-label>
+          <input formControlName="email" type="email" matInput placeholder="Ex. pat@example.com">
+        </mat-form-field>
+
+        <!-- Password Field -->
+        <label class="block text-sm font-medium mt-4">Password</label>
+        <mat-form-field class="example-full-width w-full">
+          <mat-label>Password</mat-label>
+          <div class="input-container relative">
+            <input formControlName="password" class="relative w-full pr-5" matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+            <a class="show-password absolute right-1 top-2 transform -translate-y-1/2" (click)="hide = !hide">
+              <i class="fa-solid icon" [class]="hide ? 'fa-eye-slash' : 'fa-eye'"></i>
+            </a>
+          </div>
+        </mat-form-field>
+
+        <!-- Forgot Password Link -->
+        <a class="text-end block pb-3 md:pb-5 text-sm" routerLink="/auth/forget-password">Forget Password?</a>
+
+        <!-- Submit Button -->
+        <button class="text-white text-center p-2 w-full rounded">Sign in</button>
+
+        <!-- Signup Link -->
+        <p class="text-center pt-8 md:pt-14">Have an account?
+          <a class="ps-1 dark:bg-black bg-customLight text-black dark:text-white" routerLink="/auth/register">Sign up</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Image Section (Responsive) -->
+    <div class="img hidden md:block md:w-1/2 lg:w-1/3">
+      <img class="w-full h-auto p-4 md:p-8" src="../../../../assets/images/authphoto.png">
+    </div>
+  </div>
+</section>
+
+<!-- Back to Top Button -->
+<a class="back-to-top cursor-pointer fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50" (click)="onToggle()">
+  <i [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'" class="text-2xl"></i>
+</a>

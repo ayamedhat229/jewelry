@@ -1,0 +1,32 @@
+a:hover{
+    background-color:rgb(182, 228, 206);
+}
+.btn-logout:hover{
+  background-color:rgb(182, 228, 206);
+}
+.bg-green-500{
+    background-color:rgb(182, 228, 206);
+}
+.nav-background{
+    // background-color: #EAE9E1;
+}
+.text-gray-300{
+    color: #828381;
+}
+@screen sm {
+    .dark-mode-icon {
+      font-size: 0rem; /* Adjust for small screens */
+    }
+  }
+  
+  @screen md {
+    .dark-mode-icon {
+      font-size: 1rem; /* Adjust for medium screens */
+    }
+  }
+  
+  @screen lg {
+    .dark-mode-icon {
+      font-size: 1rem; /* Adjust for large screens */
+    }
+  }

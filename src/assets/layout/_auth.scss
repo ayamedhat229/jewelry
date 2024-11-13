@@ -1,0 +1,99 @@
+.login {
+    background-image: url(../../assets/images/cover.png);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  
+   
+  }
+  .layout {
+    height: 100vh;
+  //   background-color: black;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    // padding: 0 2rem; /* Added padding for smaller screens */
+  }
+
+  @media (min-width: 768px) {
+    .login-card {
+      flex-direction: row;
+    }
+  }
+  
+  .form, .img-container {
+    // width: 100%;
+    // flex: 1; 
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+  
+  .auth-image {
+    width: 100%; 
+    max-width: 430px;
+    height: auto; 
+    object-fit: cover; 
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  button{
+    background-color: #5f8b76;
+}
+i{
+    // padding: 15px 20px;
+    // text-align: end;
+ 
+}
+.input-container {
+  position: relative;
+}
+
+.show-password {
+  cursor: pointer;
+  color: #aaa; /* Adjust color as needed */
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+input {
+  padding-right: 2rem; /* Ensure space for icon */
+}
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #FDAC8B;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out;
+}
+
+.back-to-top span {
+  color: #fff;
+  font-size: 3rem;
+  transition: transform 0.2s ease-out;
+}
+
+.back-to-top:hover {
+  background-color: #FDAC8B;
+}
+
+.back-to-top:hover span {
+  transform: translateY(-4px);
+}

@@ -1,0 +1,105 @@
+.products-one {
+    background-image: url(../images/productsPic.png);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  
+    .layout {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem; /* Added padding for smaller screens */
+    }
+  
+  
+  .caption-one {
+    max-width: 800px; /* Optional: limit max-width to keep text compact */
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 6rem; /* Base font size for large screens */
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #4a5568;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 1200px) {
+    .products-one {
+      height: 80vh; /* Reduce height on medium screens */
+    }
+  
+    h1 {
+      font-size: 4rem; /* Adjust h1 size for medium screens */
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products-one {
+      height: 70vh; /* Further reduce height */
+    }
+  
+    h1 {
+      font-size: 3rem; /* Adjust h1 size for tablets */
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products-one {
+      height: 60vh; /* Smaller height for mobile */
+    }
+  
+    h1 {
+      font-size: 2.5rem; /* Adjust h1 size for mobile screens */
+    }
+  
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  
+}
+/****************/
+.font-style{
+  font-family:Courier Prime;
+  font-weight: 100;
+  color: #737c8ae3;
+  font-size: 19px;
+}
+.text-4xl{
+  font-size: 45px;
+  font-family: Lexend;
+}
+/**************************/
+.products-three{
+  
+}
+.bg-icon{
+  background-color: #9ac4b0;
+  border-radius: 20px;
+  // padding: 3px 3px;
+}
+.bg-icon-two{
+  background-color: #DFCBBD;
+  border-radius: 50px;
+  padding: 15px 15px;
+}
+
+

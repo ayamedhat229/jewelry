@@ -1,0 +1,306 @@
+.about-one {
+    height: 100vh; /* Full viewport height for large screens */
+}
+
+/* Image styles */
+img {
+    width: 600px; /* Default image size for large screens */
+    max-width: 100%; /* Make the image responsive */
+}
+.up-icon{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #FDAC8B;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+/* Text styles */
+.text-font {
+    font-size: 61px;
+    font-family: 'Instrument Serif';
+}
+
+.style {
+    color: #CDB389;
+    font-family: 'DM Sans';
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+    color: #9A9A99;
+    font-family: 'DM Sans';
+}
+
+/* Button styles */
+.bg-btn {
+    background-color: #FDAC8B;
+    color: black;
+    font-weight: bold;
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 1024px) {
+    .about-one {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 2rem; /* Reduce padding */
+    }
+    .flex-col {
+        flex-direction: column; /* Stack items vertically on medium screens */
+    }
+    img {
+        width: 100%; /* Make the image responsive */
+    }
+    .ps-16 {
+        padding-left: 1rem; /* Reduce padding */
+    }
+    .pt-20 {
+        padding-top: 1rem; /* Reduce padding */
+    }
+    .text-font {
+        font-size: 48px; /* Adjust font size for tablets */
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 768px) {
+    .about-one {
+        padding: 1rem;
+    }
+    .text-font {
+        font-size: 36px; /* Adjust font size for small screens */
+    }
+    p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+    img {
+        width: 100%; /* Full-width image on mobile */
+    }
+    .bg-btn {
+        width: 100%; /* Full-width button for small screens */
+    }
+}
+/********************/
+
+.about-two{
+    // background-color: #FDE0D2;
+    height: fit-content;
+    h1{
+        font-size: 49px;
+    
+    }
+
+.about-two {
+    padding: 4rem 2rem;
+}
+
+.caption h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.caption p {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.w-80 img {
+    width: 320px;
+    max-width: 100%;
+}
+
+/* Responsive adjustments for medium screens (tablets) */
+@media (max-width: 1024px) {
+    .about-two {
+        padding: 2rem;
+    }
+
+    .caption h1 {
+        font-size: 36px; /* Adjust heading size */
+    }
+
+    .caption p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    .w-80 img {
+        width: 100%; /* Make image responsive */
+    }
+}
+
+/* Responsive adjustments for small screens (phones) */
+@media (max-width: 768px) {
+    .about-two {
+        padding: 1.5rem;
+    }
+
+    .caption h1 {
+        font-size: 28px; /* Smaller heading for mobile */
+    }
+
+    .caption p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    .w-80 img {
+        width: 100%; /* Full-width image for small screens */
+    }
+
+    .card p {
+        font-size: 14px; /* Smaller font in card for small screens */
+        padding: 1rem; /* Adjust padding for smaller viewports */
+    }
+}
+/*****************/
+}
+.about-three {
+    /* Base styles */
+    height: auto;
+    padding: 2rem;
+}
+
+h2.style-text {
+    font-size: 50px;
+    padding-bottom: 18px;
+    // color: #2B2024;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+
+}
+
+i {
+    color: #523C1E;
+    font-size: 20px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+img {
+    width: 700px;
+    max-width: 100%;
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 1024px) {
+    .about-three {
+        padding: 2rem;
+    }
+    h2.style-text {
+        font-size: 40px; /* Adjust font size */
+        padding-left: 1rem; /* Adjust left padding */
+    }
+    .ps-32 {
+        padding-left: 1rem; /* Reduce padding on smaller screens */
+    }
+    img {
+        width: 100%; /* Make image responsive */
+    }
+    p {
+        font-size: 18px; /* Adjust font size for medium screens */
+    }
+    .ps-10{
+        padding: 0;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 768px) {
+    .about-three {
+        padding: 1rem;
+    }
+    h2.style-text {
+        font-size: 30px; /* Smaller font size for small screens */
+        padding-left: 0.5rem;
+    }
+    .ps-32 {
+        padding-left: 0.5rem;
+    }
+    img {
+        width: 100%; /* Full-width image for small screens */
+    }
+    p {
+        font-size: 16px; /* Smaller font size for phones */
+    }
+    span i {
+        font-size: 18px; /* Slightly smaller icons on small screens */
+    }
+    .ps-10{
+        padding: 0;
+    }
+}
+/**************************/
+.about-four{
+    // background-color: #FFF9F2;
+    height: fit-content;
+    .necklace-img{
+        width: 563px;
+        height: 614px;
+    }
+    .caption-two{
+        width: 737px;
+        height: 693px;
+        p{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+}
+.about-four {
+    height: fit-content; /* Keep the existing height property */
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .about-four .flex {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align for better appearance */
+    }
+
+    .about-four .caption-two {
+        width: 90%; /* Full width on tablets */
+        padding: 20px; /* Adjust padding */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .about-four .necklace-img {
+        width: 90%; /* Full width on tablets */
+        height: auto; /* Allow height to adjust */
+        margin-top: 20px; /* Add margin for spacing */
+    }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 768px) {
+    .about-four .flex {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align */
+    }
+
+    .about-four .caption-two {
+        width: 95%; /* Full width on mobile */
+        padding: 15px; /* Adjust padding */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .about-four .necklace-img {
+        width: 95%; /* Full width on mobile */
+        height: auto; /* Allow height to adjust */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+
+    /* Optional: Adjust font sizes for smaller devices */
+    .about-four h2 {
+        font-size: 1.5rem; /* Smaller font size for headings */
+    }
+
+    .about-four p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs */
+    }
+}
+
+
