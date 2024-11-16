@@ -1,7 +1,7 @@
 
 [build]
   command = "ng build"
-  publish = "dist/my-jewelryy"
+  publish = "dist/jewelry"
 
 [[redirects]]
   from = "/*"
