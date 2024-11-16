@@ -32,6 +32,7 @@ export class RegisterComponent implements OnInit {
       next:(res)=>{
         console.log(res);
       },
+
       error:(err)=>{
         console.log(err)
       },
@@ -52,20 +53,6 @@ export class RegisterComponent implements OnInit {
       }
     });
   }
-  // verifyAccount(data:any){
-  //   this._authService.onVerifyAccount(data.value).subscribe({
-  //     next:(res)=>{
-  //        console.log(res);
-
-  //     },
-  //     error:(err)=>{
-  //       console.log(err)
-  //     },
-  //     complete:()=>{
-  //       this._Router.navigateByUrl('/auth/login')
-  //     }
-  //   })
-  // }
   onToggle(){
     this._authService.toggleDarkMode()
   }
